@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.0.0...v1.0.1) (2024-06-22)
+
+
+### Bug Fixes
+
+* **CHANGELOG:** modified old history ([cbd8d3b](https://github.com/JtotheDoubleO/restos-frontend/commit/cbd8d3b7c91bdc99b4be7cbefe6423c28dbdd678))
+* **GitHub Action:** modified gtihub action setup for crowdin ([9c65000](https://github.com/JtotheDoubleO/restos-frontend/commit/9c6500048c3f6fb8c5bb34b05d92f71d52d5ac0a))
+
 # 1.0.0 (2024-06-22)
 
 
