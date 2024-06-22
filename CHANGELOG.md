@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.0.1...v1.0.2) (2024-06-22)
+
+
+### Bug Fixes
+
+* **Script:** modified build script ([f17cd05](https://github.com/JtotheDoubleO/restos-frontend/commit/f17cd05495fc5b424d6d1b3177846a4182db798e))
+
 ## [1.0.1](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.0.0...v1.0.1) (2024-06-22)
 
 
