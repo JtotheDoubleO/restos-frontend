@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.0.2...v1.0.3) (2024-06-22)
+
+
+### Bug Fixes
+
+* **Dev Dependency:** modified ip packgae ([4d6c2c8](https://github.com/JtotheDoubleO/restos-frontend/commit/4d6c2c82d3c815a87222d6c1b11fe5bae6b0395d))
+* **Env:** modified env validation & fixed ip package ([b250c74](https://github.com/JtotheDoubleO/restos-frontend/commit/b250c74d7345a266960f81e6e62596ede3d75dd7))
+
 ## [1.0.2](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.0.1...v1.0.2) (2024-06-22)
 
 
