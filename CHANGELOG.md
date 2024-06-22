@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.0.3...v1.0.4) (2024-06-22)
+
+
+### Bug Fixes
+
+* **App Config:** modified app locales ([d50fd93](https://github.com/JtotheDoubleO/restos-frontend/commit/d50fd93159c746e9a8980d3c8d92973c8905b276))
+
 ## [1.0.3](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.0.2...v1.0.3) (2024-06-22)
 
 
