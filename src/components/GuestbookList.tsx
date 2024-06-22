@@ -1,12 +1,10 @@
-import { db } from '@/libs/DB';
 import { logger } from '@/libs/Logger';
-import { guestbookSchema } from '@/models/Schema';
 
 import { DeleteGuestbookEntry } from './DeleteGuestbookEntry';
 import { EditableGuestbookEntry } from './EditableGuestbookEntry';
 
 const GuestbookList = async () => {
-  const guestbook = await db.select().from(guestbookSchema).all();
+  const guestbook: any[] = [];
 
   logger.info('Get all guestbook entries');
 
