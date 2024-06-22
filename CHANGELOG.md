@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.0.4...v1.0.5) (2024-06-22)
+
+
+### Bug Fixes
+
+* **GH Action:** modified CI workflow ([cefca0f](https://github.com/JtotheDoubleO/restos-frontend/commit/cefca0f2b328fde881c903c48d182450e61c3519))
+
 ## [1.0.4](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.0.3...v1.0.4) (2024-06-22)
 
 
