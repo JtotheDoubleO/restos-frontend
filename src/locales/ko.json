@@ -8,11 +8,11 @@
     "sign_up_link": "Sign up"
   },
   "BaseTemplate": {
-    "home_link": "home",
-    "search_link": "search",
+    "home_link": "홈",
+    "search_link": "검색",
     "calendar_link": "calendar",
-    "messages_link": "messages",
-    "menu_link": "menu"
+    "messages_link": "피드",
+    "menu_link": "메뉴"
   },
   "Index": {
     "meta_title": "Next.js Boilerplate Presentation",
