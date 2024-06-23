@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.1.4...v1.1.5) (2024-06-23)
+
+
+### Bug Fixes
+
+* **Base Template:** modified storybook ([a66ea8b](https://github.com/JtotheDoubleO/restos-frontend/commit/a66ea8b9d204c21fa6f505b88edec0585adb6bd2))
+
 ## [1.1.4](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.1.3...v1.1.4) (2024-06-23)
 
 
