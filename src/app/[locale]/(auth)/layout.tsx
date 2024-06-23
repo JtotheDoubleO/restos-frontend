@@ -1,5 +1,6 @@
 import { enUS, frFR } from '@clerk/localizations';
 import { ClerkProvider } from '@clerk/nextjs';
+import React from 'react';
 
 export default function AuthLayout(props: {
   children: React.ReactNode;
