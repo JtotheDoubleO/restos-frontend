@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="bg-white dark:bg-zinc-900 min-h-screen p-4">
+
+  <div class="flex items-center bg-zinc-100 dark:bg-zinc-800 rounded-full p-2 mb-4">
+    <svg class="w-5 h-5 text-zinc-500 dark:text-zinc-400" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M10 2a8 8 0 105.293 14.293l4.707 4.707a1 1 0 001.414-1.414l-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12A6 6 0 0110 4z"/>
+    </svg>
+    <input type="text" placeholder="맛집 이름을 검색해보세요" class="bg-transparent flex-grow p-2 focus:outline-none text-zinc-700 dark:text-zinc-300">
+  </div>
+
+  <div class="mb-4">
+    <div class="relative">
+      <img src="https://placehold.co/600x400" alt="Food Image 1" class="w-full h-48 object-cover rounded-lg">
+      <button class="absolute top-2 right-2 bg-white dark:bg-zinc-800 p-2 rounded-full shadow-md">
+        <svg class="w-6 h-6 text-zinc-500 dark:text-zinc-400" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="mt-2">
+      <div class="flex items-center text-sm text-orange-500">
+        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2a10 10 0 00-7.07 17.07A10 10 0 1012 2zm0 2a8 8 0 110 16A8 8 0 0112 4z"/>
+        </svg>
+        나카노시마×야키토리 상위 맛집
+      </div>
+      <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">카구라자카 이시카와 스시하루 나카노시마 스...</h3>
+      <div class="flex items-center text-sm text-zinc-600 dark:text-zinc-400">
+        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+        </svg>
+        4.8(2)
+      </div>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400">최고급 오마카세를 합리적인 가격에 무제한 사케와 함께 즐길 수...</p>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400">오사카 나카노시마 · 야키토리 · 4~6만원</p>
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <div class="relative">
+      <img src="https://placehold.co/600x400" alt="Food Image 2" class="w-full h-48 object-cover rounded-lg">
+      <button class="absolute top-2 right-2 bg-white dark:bg-zinc-800 p-2 rounded-full shadow-md">
+        <svg class="w-6 h-6 text-zinc-500 dark:text-zinc-400" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="mt-2">
+      <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">스시하루</h3>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400">오사카 나카노시마 · 야키토리</p>
+      <div class="flex items-center text-sm text-zinc-600 dark:text-zinc-400">
+        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+        </svg>
+        -(0)
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed bottom-0 left-0 right-0 bg-white dark:bg-zinc-800 border-t border-zinc-200 dark:border-zinc-700 flex justify-around p-2">
+    <button class="flex flex-col items-center text-zinc-600 dark:text-zinc-400">
+      <svg class="w-6 h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2a10 10 0 00-7.07 17.07A10 10 0 1012 2zm0 2a8 8 0 110 16A8 8 0 0112 4z"/>
+      </svg>
+      홈
+    </button>
+    <button class="flex flex-col items-center text-orange-500">
+      <svg class="w-6 h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2a10 10 0 00-7.07 17.07A10 10 0 1012 2zm0 2a8 8 0 110 16A8 8 0 0112 4z"/>
+      </svg>
+      검색
+    </button>
+    <button class="flex flex-col items-center text-zinc-600 dark:text-zinc-400">
+      <svg class="w-6 h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2a10 10 0 00-7.07 17.07A10 10 0 1012 2zm0 2a8 8 0 110 16A8 8 0 0112 4z"/>
+      </svg>
+      피드
+    </button>
+    <button class="flex flex-col items-center text-zinc-600 dark:text-zinc-400">
+      <svg class="w-6 h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2a10 10 0 00-7.07 17.07A10 10 0 1012 2zm0 2a8 8 0 110 16A8 8 0 0112 4z"/>
+      </svg>
+      내 예약
+    </button>
+    <button class="flex flex-col items-center text-zinc-600 dark:text-zinc-400">
+      <svg class="w-6 h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2a10 10 0 00-7.07 17.07A10 10 0 1012 2zm0 2a8 8 0 110 16A8 8 0 0112 4z"/>
+      </svg>
+      메뉴
+    </button>
+  </div>
+</div>
+</body>
+</html>

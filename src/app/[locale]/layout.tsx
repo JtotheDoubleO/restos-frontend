@@ -3,8 +3,8 @@ import '@/styles/global.css';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
+import React from 'react';
 
-import { DemoBadge } from '@/components/DemoBadge';
 import { AppConfig } from '@/utils/AppConfig';
 
 export const metadata: Metadata = {
@@ -50,15 +50,13 @@ export default function RootLayout(props: {
           messages={messages}
         >
           {props.children}
-
-          <DemoBadge />
         </NextIntlClientProvider>
       </body>
     </html>
   );
 }
 
-// Enable edge runtime but you are required to disable the `migrate` function in `src/libs/DB.ts`
+// Enable edge runtime, but you are required to disable the `migrate` function in `src/libs/DB.ts`
 // Unfortunately, this also means it will also disable the automatic migration of the database
 // And, you will have to manually migrate it with `drizzle-kit push`
 // export const runtime = 'edge';

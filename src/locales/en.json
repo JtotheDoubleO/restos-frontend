@@ -8,8 +8,11 @@
     "sign_up_link": "Sign up"
   },
   "BaseTemplate": {
-    "description": "Starter code for your Nextjs Boilerplate with Tailwind CSS",
-    "made_with": "Made with"
+    "home_link": "home",
+    "search_link": "search",
+    "calendar_link": "calendar",
+    "messages_link": "messages",
+    "menu_link": "menu"
   },
   "Index": {
     "meta_title": "Next.js Boilerplate Presentation",
