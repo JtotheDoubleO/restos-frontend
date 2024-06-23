@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.2.1...v1.3.0) (2024-06-23)
+
+
+### Features
+
+* **Search Bar:** added layout for search bar (splitted to Input Field + Hint components) ([82a0c93](https://github.com/JtotheDoubleO/restos-frontend/commit/82a0c930648baf34d904233cd881231a4dc35fb8))
+
 ## [1.2.1](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.2.0...v1.2.1) (2024-06-23)
 
 
