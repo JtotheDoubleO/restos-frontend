@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.1.3...v1.1.4) (2024-06-23)
+
+
+### Bug Fixes
+
+* **Base Template:** modified unit test ([2fceb2d](https://github.com/JtotheDoubleO/restos-frontend/commit/2fceb2dae74ab88eeb70bd314572d5f714e9a807))
+
 ## [1.1.3](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.1.2...v1.1.3) (2024-06-23)
 
 
