@@ -5,3 +5,43 @@
 .active-icon {
     filter: invert(32%) sepia(41%) saturate(4202%) hue-rotate(356deg) brightness(105%) contrast(108%);
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+}
+
+.swiper-pagination {
+    padding: 8px 4px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content !important;
+    left: 50% !important;
+    transform: translate(-50%, 0) !important;
+}
+
+.swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 9999px;
+}
+
+.swiper-pagination-bullet-active {
+    background: white;
+}

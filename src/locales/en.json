@@ -21,7 +21,8 @@
   "Search": {
     "meta_title": "Search restaurants",
     "meta_description": "Search for suitable restaurants",
-    "search_placeholder": "Search by restaurant names"
+    "search_placeholder": "Search by restaurant names",
+    "card_recommended_text": "Nakanoshima×Top Yakitori Restaurants"
   },
   "SignIn": {
     "meta_title": "Sign in",

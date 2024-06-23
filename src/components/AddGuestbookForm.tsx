@@ -1,6 +1,6 @@
 'use client';
 
-import { GuestbookForm } from './GuestbookForm';
+import { GuestbookForm } from './Card';
 
 const AddGuestbookForm = () => (
   <GuestbookForm

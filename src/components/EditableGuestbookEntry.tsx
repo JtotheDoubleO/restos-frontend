@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import { GuestbookForm } from './GuestbookForm';
+import { GuestbookForm } from './Card';
 
 const EditableGuestbookEntry = (props: {
   id: number;
