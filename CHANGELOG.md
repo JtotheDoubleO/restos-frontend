@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.2.0...v1.2.1) (2024-06-23)
+
+
+### Bug Fixes
+
+* **Eslint:** modified rules ([a5642e5](https://github.com/JtotheDoubleO/restos-frontend/commit/a5642e5d03d39f22f15e606ef6e0fb652b61c32b))
+
 # [1.2.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.1.5...v1.2.0) (2024-06-23)
 
 
