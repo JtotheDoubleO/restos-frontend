@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.1.0...v1.1.1) (2024-06-23)
+
+
+### Bug Fixes
+
+* **Base Template:** deleted dashboard own layout ([116f9f6](https://github.com/JtotheDoubleO/restos-frontend/commit/116f9f6b0c60fd6e6b0827235a233acdd8805bc0))
+
 # [1.1.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.0.5...v1.1.0) (2024-06-23)
 
 
