@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.3.0...v1.4.0) (2024-06-23)
+
+
+### Features
+
+* **Card Container:** added layouts for card container, thumnbnail slideshow ([ba4fe1f](https://github.com/JtotheDoubleO/restos-frontend/commit/ba4fe1f3cf1c5712142d94df46241fc6a5a9dcf0))
+
 # [1.3.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.2.1...v1.3.0) (2024-06-23)
 
 
