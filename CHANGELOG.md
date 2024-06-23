@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.1.5...v1.2.0) (2024-06-23)
+
+
+### Features
+
+* **Tab Bar:** added interactivity between item ([3c3bf3e](https://github.com/JtotheDoubleO/restos-frontend/commit/3c3bf3e6dc5f1dff85f48a61ed23fab422b226f8))
+
 ## [1.1.5](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.1.4...v1.1.5) (2024-06-23)
 
 
