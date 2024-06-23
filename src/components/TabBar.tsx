@@ -1,20 +1,35 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import React from 'react';
 
+import { mergeClassnames } from '@/components/private/utils';
+import { usePathname } from '@/libs/i18nNavigation';
+
 type ITabBarItemProps = {
+  isActive: boolean;
   iconSrc: string;
   label: string;
   value: string;
 };
 
-const TabBarItem = ({ iconSrc, label, value }: ITabBarItemProps) => (
+const TabBarItem = ({ isActive, iconSrc, label, value }: ITabBarItemProps) => (
   <Link
     href={value}
-    className="flex flex-col items-center capitalize text-zinc-600"
+    className={mergeClassnames(
+      'flex flex-col items-center capitalize text-zinc-600',
+      isActive && 'text-orange-500',
+    )}
   >
-    <Image src={iconSrc} alt="Home icon" width={24} height={24} />
+    <Image
+      src={iconSrc}
+      alt="Home icon"
+      width={24}
+      height={24}
+      className={mergeClassnames(isActive && 'active-icon')}
+    />
     {label}
   </Link>
 );
@@ -48,12 +63,19 @@ const TabBarItems = [
 ];
 
 const TabBar = () => {
+  const pathname = usePathname();
+
   const t = useTranslations('BaseTemplate');
 
   return (
     <div className="fixed inset-x-0 bottom-0 flex justify-around border-t border-zinc-200 bg-white p-2">
       {TabBarItems.map((item, index) => (
-        <TabBarItem key={index} {...item} label={t(item.label)} />
+        <TabBarItem
+          key={index}
+          {...item}
+          isActive={pathname === item.value}
+          label={t(item.label)}
+        />
       ))}
     </div>
   );
