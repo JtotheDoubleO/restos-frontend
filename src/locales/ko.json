@@ -10,7 +10,7 @@
   "BaseTemplate": {
     "home_link": "홈",
     "search_link": "검색",
-    "calendar_link": "calendar",
+    "booking_link": "my reservation",
     "messages_link": "피드",
     "menu_link": "메뉴"
   },
