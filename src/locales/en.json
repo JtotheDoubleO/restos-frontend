@@ -10,7 +10,7 @@
   "BaseTemplate": {
     "home_link": "home",
     "search_link": "search",
-    "calendar_link": "calendar",
+    "booking_link": "my reservation",
     "messages_link": "messages",
     "menu_link": "menu"
   },
