@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.1.2...v1.1.3) (2024-06-23)
+
+
+### Bug Fixes
+
+* **Tab Bar:** modified tab bar internationalisation ([9dd8f1f](https://github.com/JtotheDoubleO/restos-frontend/commit/9dd8f1f1a2130b18c1910a100036f5b8f0f17ebd))
+
 ## [1.1.2](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.1.1...v1.1.2) (2024-06-23)
 
 
