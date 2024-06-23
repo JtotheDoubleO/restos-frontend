@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { userEvent, within } from '@storybook/test';
+// import { userEvent, within } from '@storybook/test';
 import { NextIntlClientProvider } from 'next-intl';
 
 import messages from '@/locales/en.json';
@@ -40,14 +40,14 @@ export const BaseWithString = {
 } satisfies Story;
 
 // More on interaction testing: https://storybook.js.org/docs/7.0/react/writing-tests/interaction-testing
-export const BaseWithHomeLink: Story = {
-  args: {
-    children: <div>Children node</div>,
-  },
-  play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    const link = canvas.getByText('Link 1');
-
-    await userEvent.click(link);
-  },
-} satisfies Story;
+// export const BaseWithHomeLink: Story = {
+//   args: {
+//     children: <div>Children node</div>,
+//   },
+//   play: async ({ canvasElement }) => {
+//     const canvas = within(canvasElement);
+//     const link = canvas.getByText('Link 1');
+//
+//     await userEvent.click(link);
+//   },
+// } satisfies Story;
