@@ -36,8 +36,8 @@ const TabBarItems = [
     iconSrc: '/assets/images/icons/message.svg',
   },
   {
-    label: 'calendar_link' as const,
-    value: '/calendar',
+    label: 'booking_link' as const,
+    value: '/my-reservations',
     iconSrc: '/assets/images/icons/calendar.svg',
   },
   {
