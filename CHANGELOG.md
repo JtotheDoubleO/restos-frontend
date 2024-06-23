@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.0.5...v1.1.0) (2024-06-23)
+
+
+### Features
+
+* **Tab Bar:** added template layout with bottom tab bar ([7a002d0](https://github.com/JtotheDoubleO/restos-frontend/commit/7a002d0ad63bfcf7e34dfe51be5da224d8057a7b))
+
 ## [1.0.5](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.0.4...v1.0.5) (2024-06-22)
 
 
