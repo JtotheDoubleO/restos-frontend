@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.5.0...v1.6.0) (2024-06-24)
+
+
+### Features
+
+* **Filter Tags:** added interactivity for filter tags system ([55033f4](https://github.com/JtotheDoubleO/restos-frontend/commit/55033f4df14e4fc50e6b631ef1af1c04e24112c4))
+
 # [1.5.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.4.0...v1.5.0) (2024-06-24)
 
 
