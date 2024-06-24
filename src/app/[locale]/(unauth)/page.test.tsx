@@ -7,7 +7,7 @@ import Index from './page';
 
 describe('Index page', () => {
   describe('Render method', () => {
-    it('should have h1 tag', () => {
+    it('should have welcoming tag', () => {
       render(
         <NextIntlClientProvider locale="en" messages={messages}>
           <Index />
@@ -15,7 +15,7 @@ describe('Index page', () => {
       );
 
       const heading = screen.getByRole('heading', {
-        name: /Boilerplate Code/,
+        name: /Have a good day/,
       });
 
       expect(heading).toBeInTheDocument();
