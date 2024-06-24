@@ -46,7 +46,7 @@ const Card = (props: ICardProps) => {
         <button
           type="button"
           aria-label="mark favorite"
-          className="absolute right-2 top-2 z-[9999] rounded-full bg-white/25 p-2 shadow-md"
+          className="absolute right-2 top-2 z-[9998] rounded-full bg-white/25 p-2 shadow-md"
           onClick={() => setIsMarkedFavorite(!isMarkedFavorite)}
         >
           <svg

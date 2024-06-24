@@ -19,7 +19,7 @@ const TabBarItem = ({ isActive, iconSrc, label, value }: ITabBarItemProps) => (
   <Link
     href={value}
     className={mergeClassnames(
-      'flex flex-col items-center capitalize text-zinc-600',
+      'flex flex-col items-center capitalize text-zinc-600 transition-colors',
       isActive && 'text-orange-500',
     )}
   >
@@ -68,7 +68,7 @@ const TabBar = () => {
   const t = useTranslations('BaseTemplate');
 
   return (
-    <div className="fixed inset-x-0 bottom-0 flex justify-around border-t border-zinc-200 bg-white p-2">
+    <div className="fixed inset-x-0 bottom-0 z-[9999] flex justify-around border-t border-zinc-200 bg-white p-2">
       {TabBarItems.map((item, index) => (
         <TabBarItem
           key={index}
