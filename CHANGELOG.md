@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.7.1...v1.7.2) (2024-06-24)
+
+
+### Bug Fixes
+
+* **Eslint:** surpressed eslint for global require ([f14cb0b](https://github.com/JtotheDoubleO/restos-frontend/commit/f14cb0b1782f2e1d61187717113961a7bb4b39c0))
+
 ## [1.7.1](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.7.0...v1.7.1) (2024-06-24)
 
 
