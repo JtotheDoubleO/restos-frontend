@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.7.0...v1.7.1) (2024-06-24)
+
+
+### Bug Fixes
+
+* **Index:** modified homepage ([121aacb](https://github.com/JtotheDoubleO/restos-frontend/commit/121aacb8d7f3ed83ba46dc93afefe13a3ca13afc))
+
 # [1.7.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.6.0...v1.7.0) (2024-06-24)
 
 
