@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.6.0...v1.7.0) (2024-06-24)
+
+
+### Features
+
+* **Card:** added interactivity to favorite button ([e9cb877](https://github.com/JtotheDoubleO/restos-frontend/commit/e9cb8772cf41ef0b31ee7d0f608336bd5c23175a))
+
 # [1.6.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.5.0...v1.6.0) (2024-06-24)
 
 
