@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 
 import { Card } from '@/components/Card';
-import { FilterTabs } from '@/components/FilterTabs';
+import { FilterTags } from '@/components/FilterTags';
 import { InputField } from '@/components/InputField';
 
 export async function generateMetadata(props: { params: { locale: string } }) {
@@ -27,7 +27,7 @@ export default function Search() {
         rightIconSrc=""
         placeholder={t('search_placeholder')}
       />
-      <FilterTabs />
+      <FilterTags />
       <Card
         images={[
           '/assets/images/placeholder-resto.png',
