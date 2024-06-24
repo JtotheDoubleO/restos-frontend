@@ -2,13 +2,14 @@
 
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import React from 'react';
+import React, { useState } from 'react';
 
 import { ThumbnailSlideshow } from '@/components/ThumbnailSlideshow';
 
 type ICardProps = {
   images: string[];
-  isRecommended: boolean;
+  isFavorite?: boolean;
+  isRecommended?: boolean;
   name: string;
   rating: number;
   ratingCount: number;
@@ -20,6 +21,8 @@ type ICardProps = {
 
 const Card = (props: ICardProps) => {
   const t = useTranslations('Search');
+
+  const [isMarkedFavorite, setIsMarkedFavorite] = useState(props.isFavorite);
 
   return (
     <div className="mb-4">
@@ -42,11 +45,13 @@ const Card = (props: ICardProps) => {
         )}
         <button
           type="button"
+          aria-label="mark favorite"
           className="absolute right-2 top-2 z-[9999] rounded-full bg-white/25 p-2 shadow-md"
+          onClick={() => setIsMarkedFavorite(!isMarkedFavorite)}
         >
           <svg
             className="size-6 text-white"
-            fill="none"
+            fill={isMarkedFavorite ? 'currentColor' : 'none'}
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >

@@ -35,6 +35,7 @@ export default function Search() {
           '/assets/images/placeholder-resto.png',
         ]}
         isRecommended
+        isFavorite
         name="카구라자카 이시카와 스시하루 나카노시마 스시야 카구라자카 이시카와 스시하루 나카노시마 스시야"
         rating={4.2}
         ratingCount={139}
