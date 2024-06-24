@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.7.2...v1.7.3) (2024-06-24)
+
+
+### Bug Fixes
+
+* **Index:** modified unit test for index page ([312e30a](https://github.com/JtotheDoubleO/restos-frontend/commit/312e30a105eab879c2ce19c9ce8b24826017a844))
+
 ## [1.7.2](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.7.1...v1.7.2) (2024-06-24)
 
 
