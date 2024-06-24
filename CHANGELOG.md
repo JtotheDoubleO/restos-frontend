@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.4.0...v1.5.0) (2024-06-24)
+
+
+### Features
+
+* **Filter Tags:** added responsive layout for filter tag item and filter tags group ([9949948](https://github.com/JtotheDoubleO/restos-frontend/commit/99499482d868cb890b04d72143ea6d2b14a48681))
+
 # [1.4.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.3.0...v1.4.0) (2024-06-23)
 
 
