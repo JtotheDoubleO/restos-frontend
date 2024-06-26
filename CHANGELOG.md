@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.7.3...v1.8.0) (2024-06-26)
+
+
+### Features
+
+* **TRPC Client:** imported resto-api types, setup tRPC client (with react query) and fetched restos ([c9c8574](https://github.com/JtotheDoubleO/restos-frontend/commit/c9c857443ccc39d6c328444381c3b3f81fd35562))
+
 ## [1.7.3](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.7.2...v1.7.3) (2024-06-24)
 
 
