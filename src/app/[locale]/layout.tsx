@@ -3,11 +3,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import '@/styles/global.css';
 
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import React from 'react';
 
+import { Provider } from '@/components/Provider';
 import { AppConfig } from '@/utils/AppConfig';
 
 export const metadata: Metadata = {
@@ -52,7 +54,10 @@ export default function RootLayout(props: {
           locale={props.params.locale}
           messages={messages}
         >
-          {props.children}
+          <Provider>
+            {props.children}
+            <ReactQueryDevtools initialIsOpen={false} />
+          </Provider>
         </NextIntlClientProvider>
       </body>
     </html>

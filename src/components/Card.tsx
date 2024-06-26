@@ -1,15 +1,14 @@
 'use client';
 
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 
 import { ThumbnailSlideshow } from '@/components/ThumbnailSlideshow';
 
 type ICardProps = {
   images: string[];
-  isFavorite?: boolean;
-  isRecommended?: boolean;
+  isFavorite: boolean;
+  featured?: { text: string; icon: string };
   name: string;
   rating: number;
   ratingCount: number;
@@ -20,8 +19,6 @@ type ICardProps = {
 };
 
 const Card = (props: ICardProps) => {
-  const t = useTranslations('Search');
-
   const [isMarkedFavorite, setIsMarkedFavorite] = useState(props.isFavorite);
 
   return (
@@ -66,16 +63,16 @@ const Card = (props: ICardProps) => {
         </button>
       </div>
       <div className="mt-3 flex flex-col gap-1">
-        {props.isRecommended && (
+        {props.featured && (
           <div className="flex items-center text-sm text-orange-500">
             <Image
-              src="/assets/images/icons/star.svg"
+              src={`/assets/images/icons/${props.featured?.icon}.svg`}
               alt="Star Icon"
               width={12}
               height={12}
               className="mr-1"
             />
-            {t('card_recommended_text')}
+            {props.featured?.text}
           </div>
         )}
         <div className="flex flex-row items-center justify-between">
