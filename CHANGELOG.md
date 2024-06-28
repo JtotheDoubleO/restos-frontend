@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.11.0...v1.12.0) (2024-06-28)
+
+
+### Features
+
+* **Resto:** added mutation query to mark as favorite handler ([f1ab9f7](https://github.com/JtotheDoubleO/restos-frontend/commit/f1ab9f71f18b57786a51e69f3fc53e955ddabfeb))
+
 # [1.11.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.10.0...v1.11.0) (2024-06-28)
 
 
