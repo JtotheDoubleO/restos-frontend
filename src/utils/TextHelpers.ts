@@ -46,4 +46,41 @@ export const textByRestoCategory = {
   [RestoCategory.OTHER]: '기타 일본 음식',
 };
 
+enum City {
+  osaka = 'osaka',
+  tokyo = 'tokyo',
+  kyoto = 'kyoto',
+  nagoya = 'nagoya',
+  fukuoka = 'fukuoka',
+  sapporo = 'sapporo',
+  hiroshima = 'hiroshima',
+  yokohama = 'yokohama',
+  kobe = 'kobe',
+}
+
+export const TextByCity = {
+  [City.osaka]: '오사카',
+  [City.tokyo]: '도쿄',
+  [City.kyoto]: '교토',
+  [City.nagoya]: '나고야',
+  [City.fukuoka]: '후쿠오카',
+  [City.sapporo]: '삿포로',
+  [City.hiroshima]: '히로시마',
+  [City.yokohama]: '요코하마',
+  [City.kobe]: '고베',
+};
+
+export const Cities = [
+  'osaka',
+  'tokyo',
+  'kyoto',
+  'nagoya',
+  'fukuoka',
+  'sapporo',
+  'hiroshima',
+  'yokohama',
+  'kobe',
+] as const;
+
 export type TextByRestoCategoryKey = keyof typeof textByRestoCategory;
+export type TextByCityKey = keyof typeof TextByCity;

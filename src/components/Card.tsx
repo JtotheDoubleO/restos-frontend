@@ -4,8 +4,11 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 
 import { ThumbnailSlideshow } from '@/components/ThumbnailSlideshow';
-import type { TextByRestoCategoryKey } from '@/utils/TextHelpers';
-import { textByRestoCategory } from '@/utils/TextHelpers';
+import type {
+  TextByCityKey,
+  TextByRestoCategoryKey,
+} from '@/utils/TextHelpers';
+import { TextByCity, textByRestoCategory } from '@/utils/TextHelpers';
 
 type ICardProps = {
   images: string[];
@@ -96,7 +99,7 @@ const Card = (props: ICardProps) => {
           {props.desc}
         </p>
         <p className="text-sm text-zinc-600 dark:text-zinc-400">
-          {`${props.city} 나카노시마 · ${textByRestoCategory[props.category as TextByRestoCategoryKey]} · ${props.priceRange}만원`}
+          {`${TextByCity[props.city as TextByCityKey]} 나카노시마 · ${textByRestoCategory[props.category as TextByRestoCategoryKey]} · ${props.priceRange}만원`}
         </p>
       </div>
     </div>
