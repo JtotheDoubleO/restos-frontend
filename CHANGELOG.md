@@ -1,3 +1,10 @@
+## [1.9.3](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.9.2...v1.9.3) (2024-06-28)
+
+
+### Bug Fixes
+
+* **Eslint:** fixed eslint folder to ignore ([fe278e2](https://github.com/JtotheDoubleO/restos-frontend/commit/fe278e265be139ca638b40521bfe7ef53f5e628a))
+
 ## [1.9.2](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.9.1...v1.9.2) (2024-06-28)
 
 
