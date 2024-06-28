@@ -1,5 +1,6 @@
 // src/db/Resto.ts
 import { z } from 'zod';
+
 var USER_ROLES = ['administrator', 'apprentice', 'standard'];
 var FeaturedSchema = z.object({
   text: z.string().trim().min(1),
