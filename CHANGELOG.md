@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.9.3...v1.10.0) (2024-06-28)
+
+
+### Features
+
+* **Text Helpers:** added text helper util for translating city name ([1c54032](https://github.com/JtotheDoubleO/restos-frontend/commit/1c540327f5bad6864d8b87c30d5dd6a19f1b5d70))
+
 ## [1.9.3](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.9.2...v1.9.3) (2024-06-28)
 
 
