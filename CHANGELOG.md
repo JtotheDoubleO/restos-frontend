@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.8.0...v1.9.0) (2024-06-28)
+
+
+### Features
+
+* **Text Helpers:** added text helper util for resto category ([dac6e0c](https://github.com/JtotheDoubleO/restos-frontend/commit/dac6e0ccc31623a2fc1080d31c9089f6becb529a))
+
 # [1.8.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.7.3...v1.8.0) (2024-06-26)
 
 
