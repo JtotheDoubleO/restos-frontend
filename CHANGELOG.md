@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.9.0...v1.9.1) (2024-06-28)
+
+
+### Bug Fixes
+
+* **Lint:** fixed lint stage ([4a0230e](https://github.com/JtotheDoubleO/restos-frontend/commit/4a0230e5195a1ad2edd79c1db63f762633d247c8))
+
 # [1.9.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.8.0...v1.9.0) (2024-06-28)
 
 
