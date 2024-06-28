@@ -26,7 +26,7 @@ type ICardProps = {
 };
 
 const Card = (props: ICardProps) => {
-  const { mutate } = trpcApiBoilerplateClient.resto.update.useMutation();
+  const { mutate } = trpcApiBoilerplateClient.addFavorite.useMutation();
 
   const [isMarkedFavorite, setIsMarkedFavorite] = useState(props.isFavorite);
 

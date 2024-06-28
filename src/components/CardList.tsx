@@ -10,7 +10,7 @@ const CardList = () => {
   const qByName = useAppSelector((state) => state.query.q);
   const qByCategory = useAppSelector((state) => state.query.category);
 
-  const { data: restos } = trpcApiBoilerplateClient.resto.list.useQuery({
+  const { data: restos } = trpcApiBoilerplateClient.getRestaurants.useQuery({
     category: qByCategory === 'all' ? undefined : qByCategory,
     q: qByName === '' ? undefined : qByName,
   });
