@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.12.0...v1.12.1) (2024-06-28)
+
+
+### Bug Fixes
+
+* **Query:** fixed trpc queries ([8b67f51](https://github.com/JtotheDoubleO/restos-frontend/commit/8b67f514b6c91864987289f65aab6fe47724b0a4))
+
 # [1.12.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.11.0...v1.12.0) (2024-06-28)
 
 
