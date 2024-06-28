@@ -1,13 +1,11 @@
 // src/db/Resto.ts
 import { z } from 'zod';
-
-const USER_ROLES = ['administrator', 'apprentice', 'standard'];
-const FeaturedSchema = z.object({
+var USER_ROLES = ['administrator', 'apprentice', 'standard'];
+var FeaturedSchema = z.object({
   text: z.string().trim().min(1),
   icon: z.string().trim().min(1),
 });
-// eslint-disable-next-line no-unused-vars
-const RestoConfigSchema = z.object({
+var RestoConfigSchema = z.object({
   id: z.string().trim().min(1),
   isFavorite: z.boolean(),
   images: z.string().array().default([]),
@@ -22,7 +20,7 @@ const RestoConfigSchema = z.object({
 });
 
 // trpc-api-export/builder/index.ts
-const SharedSquareObject = {
+var SharedSquareObject = {
   shape: 'square',
   size: 50,
 };

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import React from 'react';
-import { EffectFade, Pagination } from 'swiper/modules';
+import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const pagination = {
@@ -14,12 +14,13 @@ const pagination = {
 
 const ThumbnailSlideshow = ({ slideContents }: { slideContents: string[] }) => (
   <Swiper
-    modules={[Pagination, EffectFade]}
+    modules={[Pagination, EffectFade, Autoplay]}
     pagination={pagination}
     loop
     effect="fade"
-    onSlideChange={() => console.log(slideContents)}
-    onSwiper={(swiper) => console.log(swiper)}
+    autoplay={{
+      delay: 2500,
+    }}
   >
     {slideContents.map((contentImageUrl, index) => (
       <SwiperSlide key={index}>
