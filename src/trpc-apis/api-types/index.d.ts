@@ -1,23 +1,14 @@
-import type * as _trpc_server from '@trpc/server';
-import type * as express from 'express';
-import type * as express_serve_static_core from 'express-serve-static-core';
-import type * as qs from 'qs';
-import type * as superjson from 'superjson';
-
-type DeepMutable<T> = {
-  -readonly [P in keyof T]: DeepMutable<T[P]>;
-};
+import * as _prisma_client from '.prisma/client';
+import * as superjson from 'superjson';
+import * as _trpc_server from '@trpc/server';
+import * as express from 'express';
+import * as qs from 'qs';
+import * as express_serve_static_core from 'express-serve-static-core';
 
 declare const appRouter: _trpc_server.CreateRouterInner<
   _trpc_server.RootConfig<{
     ctx: {
-      req: express.Request<
-        express_serve_static_core.ParamsDictionary,
-        any,
-        any,
-        qs.ParsedQs,
-        Record<string, any>
-      >;
+      req: express.Request<express_serve_static_core.ParamsDictionary, any, any, qs.ParsedQs, Record<string, any>>;
       res: express.Response<any, Record<string, any>>;
     };
     meta: object;
@@ -25,98 +16,10 @@ declare const appRouter: _trpc_server.CreateRouterInner<
     transformer: typeof superjson.default;
   }>,
   {
-    batch: _trpc_server.CreateRouterInner<
-      _trpc_server.RootConfig<{
-        ctx: {
-          req: express.Request<
-            express_serve_static_core.ParamsDictionary,
-            any,
-            any,
-            qs.ParsedQs,
-            Record<string, any>
-          >;
-          res: express.Response<any, Record<string, any>>;
-        };
-        meta: object;
-        errorShape: _trpc_server.DefaultErrorShape;
-        transformer: typeof superjson.default;
-      }>,
-      {
-        list: _trpc_server.BuildProcedure<
-          'query',
-          {
-            _config: _trpc_server.RootConfig<{
-              ctx: {
-                req: express.Request<
-                  express_serve_static_core.ParamsDictionary,
-                  any,
-                  any,
-                  qs.ParsedQs,
-                  Record<string, any>
-                >;
-                res: express.Response<any, Record<string, any>>;
-              };
-              meta: object;
-              errorShape: _trpc_server.DefaultErrorShape;
-              transformer: typeof superjson.default;
-            }>;
-            _ctx_out: {
-              req: express.Request<
-                express_serve_static_core.ParamsDictionary,
-                any,
-                any,
-                qs.ParsedQs,
-                Record<string, any>
-              >;
-              res: express.Response<any, Record<string, any>>;
-            };
-            _input_in: typeof _trpc_server.unsetMarker;
-            _input_out: typeof _trpc_server.unsetMarker;
-            _output_in: typeof _trpc_server.unsetMarker;
-            _output_out: typeof _trpc_server.unsetMarker;
-            _meta: object;
-          },
-          DeepMutable<{
-            id: string;
-            title: string;
-            description: string | null;
-            purity: number;
-            weight: number;
-            producers: {
-              id: string;
-              isFavorite: boolean;
-              images: string[];
-              featured: {
-                text: string;
-                icon: string;
-              };
-              name: string;
-              rating: number;
-              ratingCount: number;
-              city: string;
-              category: string;
-              priceRange: string;
-              desc: string;
-            }[];
-            supplier: {
-              id: string;
-              name: string;
-              description: string | null;
-            } | null;
-          }>[]
-        >;
-      }
-    >;
     resto: _trpc_server.CreateRouterInner<
       _trpc_server.RootConfig<{
         ctx: {
-          req: express.Request<
-            express_serve_static_core.ParamsDictionary,
-            any,
-            any,
-            qs.ParsedQs,
-            Record<string, any>
-          >;
+          req: express.Request<express_serve_static_core.ParamsDictionary, any, any, qs.ParsedQs, Record<string, any>>;
           res: express.Response<any, Record<string, any>>;
         };
         meta: object;
@@ -142,57 +45,6 @@ declare const appRouter: _trpc_server.CreateRouterInner<
               errorShape: _trpc_server.DefaultErrorShape;
               transformer: typeof superjson.default;
             }>;
-            _ctx_out: {
-              req: express.Request<
-                express_serve_static_core.ParamsDictionary,
-                any,
-                any,
-                qs.ParsedQs,
-                Record<string, any>
-              >;
-              res: express.Response<any, Record<string, any>>;
-            };
-            _input_in: typeof _trpc_server.unsetMarker;
-            _input_out: typeof _trpc_server.unsetMarker;
-            _output_in: typeof _trpc_server.unsetMarker;
-            _output_out: typeof _trpc_server.unsetMarker;
-            _meta: object;
-          },
-          DeepMutable<{
-            id: string;
-            isFavorite: boolean;
-            images: string[];
-            featured: {
-              text: string;
-              icon: string;
-            };
-            name: string;
-            rating: number;
-            ratingCount: number;
-            city: string;
-            category: string;
-            priceRange: string;
-            desc: string;
-          }>[]
-        >;
-        show: _trpc_server.BuildProcedure<
-          'query',
-          {
-            _config: _trpc_server.RootConfig<{
-              ctx: {
-                req: express.Request<
-                  express_serve_static_core.ParamsDictionary,
-                  any,
-                  any,
-                  qs.ParsedQs,
-                  Record<string, any>
-                >;
-                res: express.Response<any, Record<string, any>>;
-              };
-              meta: object;
-              errorShape: _trpc_server.DefaultErrorShape;
-              transformer: typeof superjson.default;
-            }>;
             _meta: object;
             _ctx_out: {
               req: express.Request<
@@ -204,179 +56,62 @@ declare const appRouter: _trpc_server.CreateRouterInner<
               >;
               res: express.Response<any, Record<string, any>>;
             };
-            _input_in: string;
-            _input_out: string;
+            _input_in:
+              | {
+                  category?: string | null | undefined;
+                  q?: string | null | undefined;
+                }
+              | null
+              | undefined;
+            _input_out:
+              | {
+                  category?: string | null | undefined;
+                  q?: string | null | undefined;
+                }
+              | null
+              | undefined;
             _output_in: typeof _trpc_server.unsetMarker;
             _output_out: typeof _trpc_server.unsetMarker;
           },
-          | DeepMutable<{
-              id: string;
-              isFavorite: boolean;
-              images: string[];
-              featured: {
-                text: string;
-                icon: string;
-              };
-              name: string;
-              rating: number;
-              ratingCount: number;
-              city: string;
-              category: string;
-              priceRange: string;
-              desc: string;
-            }>
-          | `Restaurant with id:${string} does not exist in database.`
-        >;
-        destroy: _trpc_server.BuildProcedure<
-          'mutation',
-          {
-            _config: _trpc_server.RootConfig<{
-              ctx: {
-                req: express.Request<
-                  express_serve_static_core.ParamsDictionary,
-                  any,
-                  any,
-                  qs.ParsedQs,
-                  Record<string, any>
-                >;
-                res: express.Response<any, Record<string, any>>;
-              };
-              meta: object;
-              errorShape: _trpc_server.DefaultErrorShape;
-              transformer: typeof superjson.default;
-            }>;
-            _meta: object;
-            _ctx_out: {
-              req: express.Request<
-                express_serve_static_core.ParamsDictionary,
-                any,
-                any,
-                qs.ParsedQs,
-                Record<string, any>
-              >;
-              res: express.Response<any, Record<string, any>>;
-            };
-            _input_in: {
-              id: string;
-            };
-            _input_out: {
-              id: string;
-            };
-            _output_in: typeof _trpc_server.unsetMarker;
-            _output_out: typeof _trpc_server.unsetMarker;
-          },
-          DeepMutable<{
-            id: string;
-            isFavorite: boolean;
-            images: string[];
-            featured: {
-              text: string;
-              icon: string;
-            };
-            name: string;
-            rating: number;
-            ratingCount: number;
-            city: string;
-            category: string;
-            priceRange: string;
-            desc: string;
-          }>[]
-        >;
-        create: _trpc_server.BuildProcedure<
-          'mutation',
-          {
-            _config: _trpc_server.RootConfig<{
-              ctx: {
-                req: express.Request<
-                  express_serve_static_core.ParamsDictionary,
-                  any,
-                  any,
-                  qs.ParsedQs,
-                  Record<string, any>
-                >;
-                res: express.Response<any, Record<string, any>>;
-              };
-              meta: object;
-              errorShape: _trpc_server.DefaultErrorShape;
-              transformer: typeof superjson.default;
-            }>;
-            _meta: object;
-            _ctx_out: {
-              req: express.Request<
-                express_serve_static_core.ParamsDictionary,
-                any,
-                any,
-                qs.ParsedQs,
-                Record<string, any>
-              >;
-              res: express.Response<any, Record<string, any>>;
-            };
-            _input_in: {
-              body: {
-                isFavorite: boolean;
-                featured: {
-                  text: string;
-                  icon: string;
-                };
+          (
+            | {
+                id: string;
+                createdAt: Date;
+                updatedAt: Date;
                 name: string;
-                rating: number;
-                ratingCount: number;
-                city: string;
-                category: string;
-                priceRange: string;
-                desc: string;
-                images?: string[] | undefined;
-              };
-            };
-            _input_out: {
-              body: {
-                isFavorite: boolean;
                 images: string[];
-                featured: {
-                  text: string;
-                  icon: string;
-                };
-                name: string;
+                featured: PrismaJson.Featured | null;
                 rating: number;
-                ratingCount: number;
+                ratingCount: bigint;
                 city: string;
                 category: string;
                 priceRange: string;
                 desc: string;
-              };
-            };
-            _output_in: typeof _trpc_server.unsetMarker;
-            _output_out: typeof _trpc_server.unsetMarker;
-          },
-          {
-            id: string;
-            isFavorite: boolean;
-            images: string[];
-            featured: {
-              text: string;
-              icon: string;
-            };
-            name: string;
-            rating: number;
-            ratingCount: number;
-            city: string;
-            category: string;
-            priceRange: string;
-            desc: string;
-          }
+                isFavorite: boolean;
+              }
+            | {
+                featured: _prisma_client.Prisma.JsonObject;
+                id: string;
+                createdAt: Date;
+                updatedAt: Date;
+                name: string;
+                images: string[];
+                rating: number;
+                ratingCount: bigint;
+                city: string;
+                category: string;
+                priceRange: string;
+                desc: string;
+                isFavorite: boolean;
+              }
+          )[]
         >;
       }
     >;
     util: _trpc_server.CreateRouterInner<
       _trpc_server.RootConfig<{
         ctx: {
-          req: express.Request<
-            express_serve_static_core.ParamsDictionary,
-            any,
-            any,
-            qs.ParsedQs,
-            Record<string, any>
-          >;
+          req: express.Request<express_serve_static_core.ParamsDictionary, any, any, qs.ParsedQs, Record<string, any>>;
           res: express.Response<any, Record<string, any>>;
         };
         meta: object;

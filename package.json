@@ -1,6 +1,7 @@
 {
   "name": "restos",
   "version": "1.9.3",
+  "type": "module",
   "scripts": {
     "dev:spotlight": "spotlight-sidecar",
     "dev:next": "next dev",
@@ -29,6 +30,7 @@
     "@hookform/resolvers": "^3.4.2",
     "@libsql/client": "^0.6.1",
     "@logtail/pino": "^0.4.21",
+    "@reduxjs/toolkit": "^2.2.5",
     "@sentry/nextjs": "^7.116.0",
     "@spotlightjs/spotlight": "^1.2.17",
     "@t3-oss/env-nextjs": "^0.10.1",
@@ -44,6 +46,7 @@
     "react": "~18.2.0",
     "react-dom": "~18.2.0",
     "react-hook-form": "^7.51.5",
+    "react-redux": "^9.1.2",
     "sharp": "^0.33.4",
     "superjson": "^2.2.1",
     "swiper": "^11.1.4",

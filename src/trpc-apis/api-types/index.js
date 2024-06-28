@@ -1,6 +1,5 @@
 // src/db/Resto.ts
 import { z } from 'zod';
-
 var USER_ROLES = ['administrator', 'apprentice', 'standard'];
 var FeaturedSchema = z.object({
   text: z.string().trim().min(1),
@@ -12,8 +11,8 @@ var RestoConfigSchema = z.object({
   images: z.string().array().default([]),
   featured: FeaturedSchema,
   name: z.string().trim().min(1),
-  rating: z.number(),
-  ratingCount: z.number(),
+  rating: z.number().default(0),
+  ratingCount: z.number().default(0),
   city: z.string().trim().min(1),
   category: z.string().trim().min(1),
   priceRange: z.string().trim().min(1),

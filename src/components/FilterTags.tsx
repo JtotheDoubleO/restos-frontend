@@ -1,9 +1,12 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import React, { useState } from 'react';
+import React from 'react';
 
 import { mergeClassnames } from '@/components/private/utils';
+import { useAppDispatch, useAppSelector } from '@/libs/hooks';
+import { setQuery } from '@/libs/store/query';
+import { textByRestoCategory } from '@/utils/TextHelpers';
 
 type IFilterTabItemProps = {
   isActive?: boolean;
@@ -28,20 +31,28 @@ const FilterTabItem = (props: IFilterTabItemProps) => {
   );
 };
 
-const TemporaryFilterTabItems = [
-  { label: '스시·해산물', value: 'sushi' },
-  { label: '장어', value: 'unagi' },
-  { label: '덴푸라', value: 'tempura' },
-  {
-    label: '돈카츠·쿠시카츠',
-    value: 'tonkatsu',
-  },
-];
+const toArray = (obj: object) => {
+  return Object.entries(obj).map((entry) => {
+    return {
+      value: entry[0],
+      label: entry[1],
+    };
+  });
+};
 
 const FilterTags = () => {
+  const FilterTabItems = toArray(textByRestoCategory);
+
   const t = useTranslations('Search');
 
-  const [currentTag, setCurrentTag] = useState('all');
+  const qByCategory = useAppSelector((state) => state.query.category);
+
+  const dispatch = useAppDispatch();
+
+  const handleClick = (value: string) => {
+    // setCurrentTag(value);
+    dispatch(setQuery({ category: value }));
+  };
 
   return (
     <div className="flex overflow-x-scroll scrollbar-hide">
@@ -49,15 +60,15 @@ const FilterTags = () => {
         <FilterTabItem
           value="all"
           label={t('filter_all')}
-          isActive={currentTag === 'all'}
-          onClick={(value) => setCurrentTag(value)}
+          isActive={qByCategory === 'all'}
+          onClick={handleClick}
         />
-        {TemporaryFilterTabItems.map((item, index) => (
+        {FilterTabItems.map((item, index) => (
           <FilterTabItem
             key={index}
             {...item}
-            isActive={currentTag === item.value}
-            onClick={(value) => setCurrentTag(value)}
+            isActive={qByCategory === item.value}
+            onClick={handleClick}
           />
         ))}
       </div>

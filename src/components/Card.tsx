@@ -16,7 +16,7 @@ type ICardProps = {
   featured?: { text: string; icon: string };
   name: string;
   rating: number;
-  ratingCount: number;
+  ratingCount: bigint;
   desc: string;
   category: string;
   priceRange: string;

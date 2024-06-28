@@ -4,7 +4,7 @@ import { TabBar } from '@/components/TabBar';
 
 const BaseTemplate = ({ children }: { children: React.ReactNode }) => (
   <div className="min-h-screen w-full bg-white p-4 text-gray-700 antialiased">
-    {children}
+    <div className="pb-12">{children}</div>
     <TabBar />
   </div>
 );

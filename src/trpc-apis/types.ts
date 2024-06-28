@@ -5,5 +5,5 @@ import type { AppRouter } from './api-types';
 
 type RouterOutput = inferRouterOutputs<AppRouter>;
 
-export type Resto = RouterOutput['resto']['create'];
+// export type Resto = RouterOutput['resto']['create'];
 export type Restos = RouterOutput['resto']['list'];

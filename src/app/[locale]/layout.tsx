@@ -10,6 +10,7 @@ import { NextIntlClientProvider, useMessages } from 'next-intl';
 import React from 'react';
 
 import { Provider } from '@/components/Provider';
+import StoreProvider from '@/components/StoreProvider';
 import { AppConfig } from '@/utils/AppConfig';
 
 export const metadata: Metadata = {
@@ -55,7 +56,7 @@ export default function RootLayout(props: {
           messages={messages}
         >
           <Provider>
-            {props.children}
+            <StoreProvider>{props.children}</StoreProvider>
             <ReactQueryDevtools initialIsOpen={false} />
           </Provider>
         </NextIntlClientProvider>
