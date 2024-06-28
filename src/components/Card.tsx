@@ -4,6 +4,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 
 import { ThumbnailSlideshow } from '@/components/ThumbnailSlideshow';
+import { trpcApiBoilerplateClient } from '@/trpc-apis';
 import type {
   TextByCityKey,
   TextByRestoCategoryKey,
@@ -11,6 +12,7 @@ import type {
 import { TextByCity, textByRestoCategory } from '@/utils/TextHelpers';
 
 type ICardProps = {
+  id: string;
   images: string[];
   isFavorite: boolean;
   featured?: { text: string; icon: string };
@@ -24,7 +26,14 @@ type ICardProps = {
 };
 
 const Card = (props: ICardProps) => {
+  const { mutate } = trpcApiBoilerplateClient.resto.update.useMutation();
+
   const [isMarkedFavorite, setIsMarkedFavorite] = useState(props.isFavorite);
+
+  const handleClick = () => {
+    mutate({ id: props.id, patch: { isFavorite: !isMarkedFavorite } });
+    setIsMarkedFavorite(!isMarkedFavorite);
+  };
 
   return (
     <div className="mb-4">
@@ -49,7 +58,7 @@ const Card = (props: ICardProps) => {
           type="button"
           aria-label="mark favorite"
           className="absolute right-2 top-2 z-[9998] rounded-full bg-white/25 p-2 shadow-md"
-          onClick={() => setIsMarkedFavorite(!isMarkedFavorite)}
+          onClick={handleClick}
         >
           <svg
             className="size-6 text-white"
