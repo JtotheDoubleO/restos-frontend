@@ -146,7 +146,12 @@ Run the following command on your local environment:
 npm install
 ```
 
-Then, you can run the project locally in development mode with live reload by executing:
+Then, consume types exported from backend
+```shell
+npm run trpc-api-import
+```
+
+Finally, you can run the project locally in development mode with live reload by executing:
 
 ```shell
 npm run dev
