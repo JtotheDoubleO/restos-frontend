@@ -1,3 +1,15 @@
+# [1.11.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.10.0...v1.11.0) (2024-06-28)
+
+
+### Bug Fixes
+
+* **Package:** solve conflicts on merging ([bffcfeb](https://github.com/JtotheDoubleO/restos-frontend/commit/bffcfebffcc80db0eca320c6b5d57c971b73b1d8))
+
+
+### Features
+
+* **Resto Search:** added store (reducers) to contain query params state for querying restos ([199d84f](https://github.com/JtotheDoubleO/restos-frontend/commit/199d84f4ecf08ea76ae56e111e8c5a411e87095a))
+
 # [1.10.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.9.3...v1.10.0) (2024-06-28)
 
 
