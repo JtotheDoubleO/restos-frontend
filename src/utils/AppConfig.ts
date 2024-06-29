@@ -6,6 +6,6 @@ const localePrefix: LocalePrefix = 'as-needed';
 export const AppConfig = {
   name: 'Restos',
   locales: ['en', 'ko'],
-  defaultLocale: 'en',
+  defaultLocale: 'ko',
   localePrefix,
 };
