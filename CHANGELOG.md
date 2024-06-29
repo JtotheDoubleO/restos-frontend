@@ -1,3 +1,10 @@
+## [1.12.3](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.12.2...v1.12.3) (2024-06-29)
+
+
+### Bug Fixes
+
+* **Config:** fixed app config, checkly and logtail config ([9e954ae](https://github.com/JtotheDoubleO/restos-frontend/commit/9e954ae1debd595dec79329fb56e48452bdb6bdd))
+
 ## [1.12.2](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.12.1...v1.12.2) (2024-06-28)
 
 
