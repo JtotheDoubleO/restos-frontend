@@ -1,3 +1,10 @@
+## [1.12.2](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.12.1...v1.12.2) (2024-06-28)
+
+
+### Bug Fixes
+
+* **README:** modified README file for better instruction about running locally ([5f13a9c](https://github.com/JtotheDoubleO/restos-frontend/commit/5f13a9cea259115bdbd850d09c1622c820f92c9c))
+
 ## [1.12.1](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.12.0...v1.12.1) (2024-06-28)
 
 
