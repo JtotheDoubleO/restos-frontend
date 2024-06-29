@@ -1,3 +1,10 @@
+## [1.12.4](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.12.3...v1.12.4) (2024-06-29)
+
+
+### Bug Fixes
+
+* **Env Variables:** modified next public enviroment variables ([60970bb](https://github.com/JtotheDoubleO/restos-frontend/commit/60970bb98205f88ea5feed1ba433dcb45bdcf5cf))
+
 ## [1.12.3](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.12.2...v1.12.3) (2024-06-29)
 
 
