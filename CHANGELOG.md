@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.12.6...v1.13.0) (2024-06-30)
+
+
+### Features
+
+* **Checkly:** editted production url ([d2e915e](https://github.com/JtotheDoubleO/restos-frontend/commit/d2e915e7d9eceb6832e3312d2b0d6c788851cf30))
+
 ## [1.12.6](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.12.5...v1.12.6) (2024-06-30)
 
 
