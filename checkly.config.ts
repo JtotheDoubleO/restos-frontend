@@ -20,7 +20,7 @@ export const config = defineConfig({
       {
         key: 'PRODUCTION_URL',
         // FIXME: Add your own production URL
-        value: 'https://google.com',
+        value: 'https://jooie-restos.vercel.app',
       },
     ],
     browserChecks: {
