@@ -1,8 +1,6 @@
 {
   "name": "restos",
   "version": "1.12.4",
-  "type": "module",
-  "main": "commonjs",
   "scripts": {
     "dev:spotlight": "spotlight-sidecar",
     "dev:next": "next dev",

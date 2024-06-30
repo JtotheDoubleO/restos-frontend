@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { Octokit } from 'octokit';
+// import { Octokit } from 'octokit';
 
 type TrpcApiDist = {
   owner: string;
@@ -25,7 +25,9 @@ const TRPC_API_DIST = {
   ],
 } as const satisfies TrpcApiDist;
 
-const trpcApiImport = () => {
+const trpcApiImport = async () => {
+  const { Octokit } = await import('octokit');
+
   const octokit = new Octokit({
     // Provide token if using private GitHub repository
     // auth: <GITHUB_TOKEN>,
