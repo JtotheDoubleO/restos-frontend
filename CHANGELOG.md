@@ -1,3 +1,10 @@
+## [1.12.5](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.12.4...v1.12.5) (2024-06-29)
+
+
+### Bug Fixes
+
+* **Package:** modified package ([1f84e92](https://github.com/JtotheDoubleO/restos-frontend/commit/1f84e92323b8caa9a05dbdf8cf0b4f6dd4f687ae))
+
 ## [1.12.4](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.12.3...v1.12.4) (2024-06-29)
 
 

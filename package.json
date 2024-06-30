@@ -1,6 +1,6 @@
 {
   "name": "restos",
-  "version": "1.12.4",
+  "version": "1.12.5",
   "scripts": {
     "dev:spotlight": "spotlight-sidecar",
     "dev:next": "next dev",
