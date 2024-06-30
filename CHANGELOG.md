@@ -1,3 +1,11 @@
+## [1.12.6](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.12.5...v1.12.6) (2024-06-30)
+
+
+### Bug Fixes
+
+* **Glob:** resolved conflict ([58e28ab](https://github.com/JtotheDoubleO/restos-frontend/commit/58e28ab6adf720695eb3b0933e2d01877138910a))
+* **Octokit:** changed to dynamic import ([8d078f5](https://github.com/JtotheDoubleO/restos-frontend/commit/8d078f52340a5165cc4650a301758690a581c64e))
+
 ## [1.12.5](https://github.com/JtotheDoubleO/restos-frontend/compare/v1.12.4...v1.12.5) (2024-06-29)
 
 
